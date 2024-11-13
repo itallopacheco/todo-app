@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: your-quarkus-app:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: oicapivara/todo-quarkus:latest
     environment:
       - QUARKUS_DATASOURCE_URL=jdbc:postgresql://db:5432/tasksdb
       - QUARKUS_DATASOURCE_USERNAME=postgres
